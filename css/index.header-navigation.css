@@ -1,0 +1,11 @@
+.nav{
+    background-color: #6a59aa;
+    color: white;
+
+    .nav__brand{
+        .nav__brand-link{
+            font-size: 32px;
+            font-weight: 650;
+        }
+    }
+}
