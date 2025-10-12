@@ -1,11 +1,49 @@
-.nav{
-    background-color: #6a59aa;
-    color: white;
+.nav {
+  background-color: var(--first-background-color);
 
-    .nav__brand{
-        .nav__brand-link{
-            font-size: 32px;
-            font-weight: 650;
-        }
+  .nav__outer-margin {
+    height: 106px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--font-color);
+
+    .nav__brand {
+        width: 288px;
+      .nav__brand-link {
+        font-size: 32px;
+        font-weight: 650;
+      }
     }
+
+    .nav__contact {
+      .nav__contact-email,
+      .nav__contact-phone {
+        text-decoration: underline;
+        font-weight: 700;
+        margin: 0 10px;
+      }
+
+      .nav__contact-separator {
+        font-size: 16px;
+        margin: 0 10px;
+        color: var(--accent-color);
+      }
+    }
+
+    .nav__menu {
+      .nav__menu-link {
+        letter-spacing: 0.5px;
+        padding: 0 9.5px;
+        font-weight: 650;
+
+        &:hover{
+           color: var(--accent-color);
+        }
+      }
+    }
+  }
 }

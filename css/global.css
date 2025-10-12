@@ -44,5 +44,8 @@ table {
 }
 
 :root {
+    --font-color: white;
+    --accent-color: #b5b454;
+    --first-background-color: #6a59aa;
     font-family: "Arimo", sans-serif;
 }
