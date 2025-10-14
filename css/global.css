@@ -12,9 +12,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, picture, video, canvas, svg {
+img, picture, video, canvas{
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -47,5 +46,6 @@ table {
     --font-color: white;
     --accent-color: #b5b454;
     --first-background-color: #6a59aa;
+    --background-secondary-color: #7361b9;
     font-family: "Arimo", sans-serif;
 }
