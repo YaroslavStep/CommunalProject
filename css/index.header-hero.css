@@ -13,35 +13,75 @@
         .header-hero__container{
 
             .header-hero__actions{
+                margin-top: 40px;
                 display: flex;
-                justify-content: space-between;
+
+                .header-hero__button{
+                    font-family: "Heebo", sans-serif;
+                    font-weight: 700;
+
+                }
+
+                .header-hero__button--primary{
+                    padding: 15px 30px;
+                    background-color: var(--accent-color);
+                    transition: .2s ease-in;
+
+
+                    &:hover{
+                        color:var(--hover-color);
+                        background-color:var(--font-color);
+                    }
+                }
 
                 .header-hero__button--secondary{
                     display: flex;
                     align-items: center;
+                    justify-content: start;
+                    padding-left: 20px;
+
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                    .hero__button-text{
+                        padding-left: 7px;
+                    }
                 }
             }
 
             .header-hero__description{
+                margin-top: 35px;
 
                 .header-hero__text{
+                    line-height: 1.7;
                     font-size: 16px;
+                    font-family: "Noto Sans", sans-serif;
                 }
             }
 
             .header-hero__content{
 
                 .header-hero__title{
-
+                    line-height: 1.1;
                     font-size: 25px;
 
                     .header-hero__highlight{
-
+                        
                         font-size: 76px;
+
+                        .header-hero__dot{
+                            color: var(--accent-color);
+                        }
                     }
                 }
             }
             
+        }
+
+        .header-hero__image-wrapper{
+            padding: 0 15px;
         }
     }
 }

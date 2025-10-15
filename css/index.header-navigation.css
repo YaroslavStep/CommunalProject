@@ -20,6 +20,8 @@
     }
 
     .nav__contact {
+      font-family: "Noto Sans", sans-serif;
+
       .nav__contact-email,
       .nav__contact-phone {
         text-decoration: underline;
@@ -35,10 +37,11 @@
     }
 
     .nav__menu {
+
       .nav__menu-link {
-        letter-spacing: 0.5px;
         padding: 0 9.5px;
         font-weight: 650;
+        font-family: "Noto Sans", sans-serif;
 
         &:hover{
            color: var(--accent-color);
