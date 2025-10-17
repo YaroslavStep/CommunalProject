@@ -46,9 +46,15 @@ table {
 
 :root {
     --hover-color:#272727;
-    --font-color: white;
-    --accent-color: #b5b454;
-    --first-background-color: #6a59aa;
-    --background-secondary-color: #7361b9;
+    --font-color:white;
+    --accent-color:#b5b454;
+    --first-background-color:#6a59aa;
+    --background-secondary-color:#7361b9;
+    --background-third-color:#f5f5f5;
+    --section-number-color:#e0e0e0;
+    --second-font-color:#777777;
+    --background-fourth-color:white;
+    --title-color:#272727;
     font-family: "Arimo", sans-serif;
+
 }

@@ -8,7 +8,6 @@
         max-width: 1200px;
         margin: auto;
         padding-top: 80px;
-        padding-bottom: 140px;
 
         .header-hero__container{
 
@@ -83,5 +82,12 @@
         .header-hero__image-wrapper{
             padding: 0 15px;
         }
+    }
+
+    .header-hero__intersection{
+        background-color: var(--background-secondary-color);
+        width: 100%;
+        position: relative;
+        top: 6px;
     }
 }

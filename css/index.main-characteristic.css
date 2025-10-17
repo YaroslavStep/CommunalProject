@@ -1,0 +1,78 @@
+.services{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-third-color);
+
+    .services__number{
+        font-weight: 650;
+        font-size: 48px;
+        color: var(--section-number-color);
+    }
+
+    .services__title{
+        font-size: 48px;
+        color:var(--hover-color);
+
+        .services__slash{
+            color: var(--accent-color);
+        }
+    }
+
+    .services__subtitle{
+        font-family: "Noto Sans", sans-serif;
+        font-size: 18px;
+        color: var(--second-font-color);
+    }
+
+    .services__list{
+        display: flex;
+
+        .services__item{
+            background-color: var(--background-fourth-color);
+
+            .services__icon{
+                width: 50px;
+            }
+        }
+
+        .services__item-title{
+            color:var(--title-color);
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .services__item-description{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 16px;
+            color: var(--second-font-color);
+        }
+
+        .services__link{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--title-color);
+            letter-spacing: 1px;
+        }
+    }
+
+    .services__cta{
+        font-family: "Noto Sans", sans-serif;
+        font-size: 16px;
+        color: var(--second-font-color);
+
+        .services__cta-highlight{
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+    }
+
+    .services__more-link{
+        font-family: "Heebo", sans-serif;
+        font-size: 14px;
+        color: var(--font-color);
+        background-color: var(--background-secondary-color);
+    }
+}
