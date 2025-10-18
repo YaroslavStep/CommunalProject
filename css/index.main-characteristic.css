@@ -12,6 +12,8 @@
     }
 
     .services__title{
+        margin-top: 10px;
+        margin-bottom: 20px;
         font-size: 48px;
         color:var(--hover-color);
 
@@ -24,12 +26,19 @@
         font-family: "Noto Sans", sans-serif;
         font-size: 18px;
         color: var(--second-font-color);
+        margin-bottom: 50px;
     }
 
     .services__list{
-        display: flex;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 30px;
 
         .services__item{
+            padding: 40px;
+            display: grid;
+            gap: 20px;
             background-color: var(--background-fourth-color);
 
             .services__icon{
@@ -44,6 +53,7 @@
         }
 
         .services__item-description{
+            line-height: 1.7;
             font-family: "Noto Sans", sans-serif;
             font-size: 16px;
             color: var(--second-font-color);
@@ -59,6 +69,8 @@
     }
 
     .services__cta{
+        margin-top: 60px;
+        margin-bottom: 40px;
         font-family: "Noto Sans", sans-serif;
         font-size: 16px;
         color: var(--second-font-color);
@@ -70,9 +82,17 @@
     }
 
     .services__more-link{
+        margin-bottom: 100px;
+        font-weight: 700;
+        padding: 15px 30px;
         font-family: "Heebo", sans-serif;
         font-size: 14px;
         color: var(--font-color);
         background-color: var(--background-secondary-color);
+        transition: all .2s ease-in;
+
+        &:hover{
+            background-color: var(--accent-color);
+        }
     }
 }
