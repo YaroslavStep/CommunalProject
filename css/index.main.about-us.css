@@ -1,0 +1,21 @@
+.about-us{
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    gap: 100px;
+
+    .about-us__content{
+        display: grid;
+
+        .about-us__image-wrapper{
+
+            .about-us__image{
+                max-width: 545px;
+                object-position: left;
+                object-fit: cover;
+                height: 545px;
+                border: 10px solid var(--background-third-color);
+            }
+        }
+    }
+}
