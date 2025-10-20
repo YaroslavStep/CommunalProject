@@ -27,6 +27,7 @@
         font-size: 18px;
         color: var(--second-font-color);
         margin-bottom: 50px;
+        font-weight: 600;
     }
 
     .services__list{

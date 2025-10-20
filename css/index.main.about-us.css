@@ -1,10 +1,11 @@
 .about-us{
-    margin: auto;
+    margin: 130px auto 0;
     max-width: 1200px;
     display: grid;
     gap: 100px;
 
     .about-us__content{
+        grid-template-columns: 1fr 1fr;
         display: grid;
 
         .about-us__image-wrapper{
@@ -17,5 +18,135 @@
                 border: 10px solid var(--background-third-color);
             }
         }
+
+        .about-us__text-block{
+            display: grid;
+            gap: 10px;
+
+            .about-us__number{
+                font-weight: 650;
+                font-size: 48px;
+                color: var(--section-number-color);
+                line-height: 1.1;
+            }
+
+            .about-us__title{
+                line-height: 1.1;
+                font-size: 48px;
+                color:var(--hover-color);
+
+
+                .about-us__title-decor{
+                    color: var(--accent-color);
+                }
+
+                .about-us__title-dot{
+                    color: var(--first-background-color);
+                }
+            }
+
+            .about-us__subtitle{
+                font-family: "Noto Sans", sans-serif;
+                font-size: 18px;
+                color: var(--second-font-color);
+                font-weight: 600;
+            }
+
+            .about-us__description{
+                line-height: 1.7;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 16px;
+                color: var(--second-font-color);
+            }
+
+            .about-us__stats{
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);      
+            
+                .about-us__stat{
+                    width: 150px;
+                    padding-left: 35px;
+                    display: grid;
+                    gap: 10px;
+                    font-weight: 700;
+
+                    .about-us__stat-number{
+                        position: relative;
+                        color: var(--accent-color);
+                        font-size: 48px;
+
+                        &::before{
+                            color: var(--first-background-color);
+                            right: 130px;
+                            content: ".";
+                            position: absolute;
+                            font-size: 24px;
+                        }
+                    }
+
+                    .about-us__stat-label{
+                        font-size: 15px;
+                        color: var(--second-font-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us__cta{
+        display: grid;
+        gap: 40px;
+        padding: 60px;
+        background: url(https://res2.weblium.site/res/68999fa97b47e3d7b22277e8/68a566c1da655732fb8eafb3_optimized_1646.webp) 55% 36.55% / cover no-repeat;
+        
+        .about-us__cta-title{
+            line-height: 1.1;
+            font-size: 48px;
+            color:var(--font-color);
+
+            .about-us__title-decor{
+                color: var(--accent-color);
+            }
+
+            .about-us__title-dot{
+                color: var(--first-background-color);
+            }
+        }
+
+        .about-us__cta-subtitle{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 18px;
+            color: var(--font-color);
+            font-weight: 500;
+        }
+
+        .about-us__cta-features{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 14px;
+            color: var(--background-third-color);
+
+            .about-us__dot{
+                color: var(--first-background-color);
+            }
+        }
+
+        .about-us__cta-button{
+            margin-bottom: 20px;
+            width: fit-content;
+            font-weight: 700;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
+            color: var(--font-color);
+            font-family: "Heebo", sans-serif;
+            font-size: 15.4px;
+            transition: all .2s ease-in;
+
+            &:hover{
+                background-color: var(--font-color);
+                color: var(--hover-color);
+            }
+        }
     }
 }
+
