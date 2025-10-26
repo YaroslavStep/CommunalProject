@@ -1,0 +1,86 @@
+.printing-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+    background-color: var(--hover-color);
+
+    .printing-services__image-wrapper{
+        
+        .printing-services__image{
+            width: 100%;
+        }
+    }
+
+    .printing-services__content{
+
+        .printing-services__number{
+            font-weight: 650;
+            font-size: 48px;
+            color: var(--secondary-section-number-color);
+        }
+
+        .printing-services__title{
+            font-size: 48px;
+            color:var(--font-color);
+
+            .printing-services__title-slash{
+                color: var(--background-secondary-color);
+            }
+            .printing-services__title-dot{
+                color: var(--accent-color);
+            }
+        }
+
+        .printing-services__subtitle{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 18px;
+            color: var(--font-color);
+            font-weight: 550;
+        }
+
+        .printing-services__text{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .printing-services__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 7px;
+
+            .printing-services__list-container{
+
+                .printing-services__list-container-inner{
+
+                    .printing-services__icon{
+                        width: 20px;
+                        height: 24px;
+                        color: var(--font-color);
+                    }
+
+                    .printing-services__service{
+                        color: var(--font-color);
+                        font-family: "Noto Sans", sans-serif;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .printing-services__link{
+            font-family: "Heebo", sans-serif;
+            font-size: 15.4px;
+            color: var(--font-color);
+            font-weight: 700;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
+            transition: all .2s ease-in;
+
+            &:hover{
+                color: var(--hover-color);
+                background-color: var(--font-color);
+            }
+        }
+    }
+}
