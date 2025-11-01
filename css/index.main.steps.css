@@ -1,0 +1,89 @@
+.steps{
+    background-color: var(--background-third-color);
+    padding-top: 100px;
+
+    .steps__container-inner{
+        margin: auto;
+        max-width: 1200px;
+
+        .steps__header{
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+
+            .steps__title-container{
+                display: grid;
+                gap: 15px;
+
+                .steps__number{
+                    color: var(--section-number-color);
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+
+                .steps__title{
+                    font-size: 48px;
+                    font-weight: 700;
+
+                    .steps__slash{
+                        color: var(--accent-color);
+                    }
+
+                    .steps__dot{
+                        color: var(--first-background-color);
+                    }
+                }
+
+                .steps__subtitle{
+                    font-family: "Noto Sans", sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--second-font-color);
+                }
+            }
+
+            .steps__link-container{
+                margin-left: 200px;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+
+                .steps__avatar{
+                    border-radius: 100%;
+                    width: 120px;
+                    margin-right: 10px;
+                }
+
+                .steps__text-container{
+
+                    .steps__link-title{
+                        font-size: 25px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    .steps__link-text{
+                        font-family: "Noto Sans", sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: var(--second-font-color);
+                        margin-bottom: 5px;
+                    }
+
+                    .steps__link-email{
+                        font-size: 13px;
+                        font-family: "Noto Sans", sans-serif;
+                        color: var(--second-font-color);
+                        font-weight: 500;
+
+                        .steps__link{
+                            color: var(--background-secondary-color);
+                            font-weight: 700;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
