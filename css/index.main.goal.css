@@ -41,9 +41,6 @@
         display: flex;
         flex-direction: row;
         /* grid-template-columns: 1fr 1fr 1fr; */
-        object-fit: cover;
-        width: fit-content;
-        height: fit-content;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -58,6 +55,7 @@
             .goal__gallery-item{
 
                 .goal__image{
+                    object-fit: cover;
                     width: 370px;
 
                 }
