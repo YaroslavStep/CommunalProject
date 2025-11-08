@@ -1,6 +1,8 @@
 .goal{
     padding-top: 100px;
     padding-bottom: 100px;
+    max-width: 1200px;
+    margin: auto;
 
     .goal__header{
         display: flex;
@@ -42,11 +44,9 @@
         flex-direction: row;
         /* grid-template-columns: 1fr 1fr 1fr; */
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
-        gap: 30px;
 
-    
         .goal__gallery-row{
             display: grid;
             gap: 30px;
@@ -56,7 +56,7 @@
 
                 .goal__image{
                     object-fit: cover;
-                    width: 370px;
+                    width: 380px;
 
                 }
 
