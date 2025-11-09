@@ -1,0 +1,60 @@
+.footer{
+    background-color: var(--hover-color);
+
+    .footer__container{
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 100px;
+
+        .footer__brand{
+    
+            .footer__logo{
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--font-color);
+            }
+
+            .footer__description{
+                font-size: 14px;
+                font-family: "Noto Sans", sans-serif;
+                color: var(--background-third-color);
+            }
+
+            .footer__socials{
+                display: flex;
+
+                .footer__social-link{
+
+                    .footer__social-icon{
+                        width: 29px;
+                        background-color: var(--background-secondary-color);
+
+                    }
+                }
+            }
+        }
+
+        .footer__nav{
+            display: flex;
+            flex-direction: column;
+
+            .footer__title{
+                font-size: 25px;
+                font-weight: 600;
+                color: var(--font-color);
+            }
+
+            .footer__line{
+
+            }
+
+            .footer__link{
+                font-size: 15px;
+                font-family: "Noto Sans", sans-serif;
+                color: var(--a-color);
+            }
+        }
+    }
+}

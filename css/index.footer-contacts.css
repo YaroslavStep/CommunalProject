@@ -1,0 +1,52 @@
+.contacts{
+    padding: 40px;
+    height: 148px;
+    background-color: var(--background-secondary-color);
+
+    .contacts__container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+
+        .contacts__title{
+            width: 350px;
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--font-color);
+        }
+
+        .contacts__description{
+            width: 547px;
+            font-size: 16px;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+            color: var(--font-color);
+
+            .contacts__description-important{
+                font-weight: 700;
+            }
+
+            .contacts__description-cursive{
+                font-style: italic;
+            }
+        }
+
+        .contacts__button{
+            color: var(--hover-color);
+            background-color: var(--background-fourth-color);
+            padding: 15px 30px;
+            font-size: 15.4px;
+            font-family: "Heebo", sans-serif;
+            font-weight: 700;
+            transition: all 0.2s ease-in;
+
+            &:hover{
+                color: var(--font-color);
+                background-color: var(--hover-color);
+            }
+        }
+    }
+}
