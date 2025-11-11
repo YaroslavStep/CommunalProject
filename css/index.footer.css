@@ -1,60 +1,119 @@
 .footer{
     background-color: var(--hover-color);
 
-    .footer__container{
-        display: flex;
-        flex-direction: row;
+    .footer__inner-container{
+        justify-content: space-between;
         max-width: 1200px;
         margin: auto;
         padding-top: 100px;
+        display: flex;
 
-        .footer__brand{
+        .footer__container{
+            justify-content: space-between;
+            display: flex;
     
-            .footer__logo{
-                font-size: 24px;
-                font-weight: 700;
-                color: var(--font-color);
-            }
-
-            .footer__description{
-                font-size: 14px;
-                font-family: "Noto Sans", sans-serif;
-                color: var(--background-third-color);
-            }
-
-            .footer__socials{
+            .footer__brand{
                 display: flex;
+                flex-direction: column;
+                gap: 30px;
+        
+                .footer__logo{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: var(--font-color);
+                }
 
-                .footer__social-link{
+                .footer__description{
+                    line-height: 1.7;
+                    font-size: 14px;
+                    font-family: "Noto Sans", sans-serif;
+                    color: var(--background-third-color);
+                }
 
-                    .footer__social-icon{
-                        width: 29px;
-                        background-color: var(--background-secondary-color);
+                .footer__socials{
+                    display: flex;
+                    gap: 15px;
 
+                    .footer__social-link{
+
+                        .footer__social-icon{
+                            width: 29px;
+
+                            .footer__background-logo{
+                                fill: var(--background-secondary-color);
+                            }  
+                        }
+                    }
+                }
+            }
+
+            .footer__nav{
+                display: flex;
+                flex-direction: column;
+
+                .footer__title{
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: var(--font-color);
+                }
+
+                .footer__line{
+                    height: 20px;
+
+                    .footer__line-path{
+                        width: 30%;
+                        stroke-width: 2px;
+                        stroke: var(--line-secondary-color);
+                    }
+
+                }
+
+                .footer__link{
+                    margin: 10px 0;
+                    font-size: 15px;
+                    font-family: "Noto Sans", sans-serif;
+                    color: var(--a-color);
+                    font-weight: 500;
+
+                    &:hover{
+                        color: var(--font-color);
                     }
                 }
             }
         }
 
-        .footer__nav{
-            display: flex;
-            flex-direction: column;
+        .footer__container{
 
-            .footer__title{
-                font-size: 25px;
-                font-weight: 600;
-                color: var(--font-color);
+            .footer__services{
+
+                .footer__title{
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: var(--font-color);
+
+                    .footer__line{
+                        height: 20px;
+
+                        .footer__line-path{
+                            width: 30%;
+                            stroke-width: 2px;
+                            stroke: var(--line-secondary-color);
+                        }
+                    }
+
+                    .footer__link{
+                        margin: 10px 0;
+                        font-size: 15px;
+                        font-family: "Noto Sans", sans-serif;
+                        color: var(--a-color);
+                        font-weight: 500;
+
+                        &:hover{
+                            color: var(--font-color);
+                        }
+                    }
+                }
             }
-
-            .footer__line{
-
-            }
-
-            .footer__link{
-                font-size: 15px;
-                font-family: "Noto Sans", sans-serif;
-                color: var(--a-color);
-            }
-        }
+        } 
     }
 }
