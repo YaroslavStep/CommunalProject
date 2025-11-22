@@ -1,27 +1,104 @@
 .footer{
+    padding-bottom: 30px;
+    height: 420px;
     padding-top: 100px;
     background-color: var(--title-color);
 
     .footer__inner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: 1200px;
         margin: auto;
+        height: 100%;
 
         .footer__content{
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 30px;
+            position: relative;
+
+            &::after{
+                background-color: var(--footer-divider-color);
+                content: "";
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                top: 250px;
+            }
+
+            .footer__first-double-container{
+                grid-template-columns: 3fr 2fr;
+            }
+
+            .footer__second-double-container{
+                grid-template-columns: 3fr 4fr;
+            }
 
 
             .footer__double-container{
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                gap: 30px;
 
-                .footer__container-gap{
-                    gap: 35px;
+                .footer__first-container{
+                    justify-content: space-between;
                 }
 
                 .footer__container{
+                    height: 200px;
+                    justify-content: space-between;
                     display: flex;
                     flex-direction: column;
+
+                    .footer__form{
+                        display: flex;
+                        flex-direction: column;
+                        height: 122px;
+                        justify-content: space-between;
+
+                        .footer__input{
+                            font-family: "Noto Sans", sans-serif;
+                            color: var(--a-color);
+                            font-weight: 550;
+                            padding: 15px 26px;
+                            background-color: var(--input-background-color);
+                            width: 100%;
+                            height: 50px;
+                        }
+
+                        .footer__button{
+                            font-size: 14px;
+                            font-weight: 700;
+                            font-family: "Heebo", sans-serif;
+                            height: 47px;
+                            width: 100%;
+                            color: var(--font-color);
+                            background-color: var(--accent-color);
+                            transition: all .2s ease-in;
+
+                            &:hover{
+                                background-color: var(--background-fourth-color);
+                                color: var(--hover-color);
+                            }
+                        }
+                    }
+
+                    .footer__link-container{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .footer__link{
+                            font-family: "Noto Sans", sans-serif;
+                            font-size: 15px;
+                            color: var(--a-color);
+                            font-weight: 500;
+
+                            &:hover{
+                                color: var(--font-color);
+                            }
+                        }
+                    }
 
                     .footer__title{
                         font-weight: 700;
@@ -46,6 +123,12 @@
 
                             .footer__source-path{
                                 fill: var(--background-secondary-color);
+                                transition: all .1s ease-in;
+
+                                &:hover{
+                                    fill: #a697e3;
+                                    cursor: pointer;
+                                }
                             }
                         }
                     }
@@ -61,6 +144,16 @@
                     }
                 }
             }
+        }
+
+        .footer__bottom{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            color: var(--a-color);
+            font-family: "Noto Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 }

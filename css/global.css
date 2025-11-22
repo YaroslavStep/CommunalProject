@@ -62,6 +62,8 @@ table {
     --line-color:#cccccc;
     --a-color:#ffffff6b;
     --line-secondary-color:#343434;
+    --input-background-color:#2f2f2f;
+    --footer-divider-color:#525252;
     font-family: "Arimo", sans-serif;
 
 }
