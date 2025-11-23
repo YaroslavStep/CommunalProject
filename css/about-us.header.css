@@ -1,0 +1,58 @@
+.header {
+  background-image: url("../img/about-us.background.png");
+  height: 720px;
+  background-position: 50% 50%;
+  
+
+  .header__nav-container {
+    .header__nav {
+      .nav__outer-margin {
+        height: 106px;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        color: var(--font-color);
+
+        .nav__brand {
+          width: 288px;
+          .nav__brand-link {
+            font-size: 32px;
+            font-weight: 650;
+          }
+        }
+
+        .nav__contact {
+          font-family: "Noto Sans", sans-serif;
+
+          .nav__contact-email,
+          .nav__contact-phone {
+            text-decoration: underline;
+            font-weight: 700;
+            margin: 0 10px;
+          }
+
+          .nav__contact-separator {
+            font-size: 16px;
+            margin: 0 10px;
+            color: var(--accent-color);
+          }
+        }
+
+        .nav__menu {
+          .nav__menu-link {
+            padding: 0 9.5px;
+            font-weight: 650;
+            font-family: "Noto Sans", sans-serif;
+
+            &:hover {
+              color: var(--accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
