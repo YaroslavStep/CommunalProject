@@ -3,8 +3,9 @@
   height: 720px;
   background-position: 50% 50%;
   
-
   .header__nav-container {
+    background-color: var(--header-secondary-background);
+
     .header__nav {
       .nav__outer-margin {
         height: 106px;
@@ -52,6 +53,44 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .header__hero{
+    background-color: var(--header-primary-background);
+    height: 614px;
+
+    .header__hero-container{
+      max-width: 1200px;
+      margin: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-bottom: 100px;
+
+      .header__title{
+        color: var(--font-color);
+        font-size: 48px;
+
+        .header__slash{
+          color: var(--accent-color);
+        }
+
+        .header__dot{
+          color: var(--background-secondary-color);
+        }
+        
+      }
+
+      .header__paragraph{
+        color: var(--font-third-color);
+        font-size: 18px;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 500;
+        width: 50%;
+        margin-top: 30px;
       }
     }
   }
