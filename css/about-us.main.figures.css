@@ -1,0 +1,33 @@
+.figures{
+    background-color: var(--accent-color);
+    color: var(--font-color);
+
+    .figures__inner-container{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .figures__article{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 20px 30px;
+            background-color: var( --background-fifth-color);
+            width: 270px;
+
+            .figures__number{
+                font-size: 38px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .figures__description{
+                font-size: 12px;
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
