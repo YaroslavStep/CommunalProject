@@ -1,0 +1,112 @@
+.services{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    gap: 50px;
+    padding-bottom: 115px;
+
+    .services__header{
+        display: flex;
+        justify-content: space-between;
+
+        .services__header-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .services__title{
+                font-size: 48px;
+                color: var(--title-color);
+                
+                .services__slash{
+                    color: var(--accent-color);
+                }
+                
+                .services__dot{
+                    color: var(--background-secondary-color);
+                }
+            }
+
+            .services__subtitle{
+                color: var(--second-font-color);
+                font-size: 18px;
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 500;
+            }
+
+            .services__number{
+                text-align: right;
+                font-size: 48px;
+                font-weight: 700;
+                color: var(--section-number-color);
+                line-height: 1.6;
+            }
+
+            .services__wish{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: "Noto Sans", sans-serif;
+                color: var(--title-color);
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .services__outer-container{
+        display: flex;
+        gap: 55px;
+        align-items: center;
+
+
+        .services__arrow-container{
+
+            .services__arrow{
+                height: 30px;
+                width: 30px;
+            }
+
+            .services__arrow-left{
+                transform: rotate(180deg);
+            }
+        }
+
+        .services__content-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 100px;
+
+            .services__inner-container{
+                display: grid;
+                gap: 20px;
+
+                .services__image-container{
+                    
+                    .services__image{
+                        width: 50px;
+                    }
+                }
+
+                .services__container-title{
+                    font-size: 25px;
+                    color: var(--title-color);
+                    font-weight: 600;
+                }
+
+                .services__container-description{
+                    font-size: 16px;
+                    font-family: "Noto Sans", sans-serif;
+                    color: var(--second-font-color);
+                }
+
+                .services__link{
+                    font-size: 12px;
+                    font-family: "Noto Sans", sans-serif;
+                    letter-spacing: 1px;
+                    color: var(--title-color);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
