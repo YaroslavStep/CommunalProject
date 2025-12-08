@@ -1,0 +1,92 @@
+.professionalism{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--background-third-color);
+    height: 840px;
+
+    .professionalism__content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 120px 180px 115px;
+        
+        .professionalism__number{
+            font-size: 48px;
+            color: var(--section-number-color);
+            font-weight: 700;
+        }
+
+        .professionalism__title{
+            color: var(--title-color);
+            font-size: 48px;
+            line-height: 1.2;
+
+            .professionalism__slash{
+                color: var(--accent-color);
+            }
+
+            .professionalism__dot{
+                color: var(--background-secondary-color);
+            }
+        }
+
+        .professionalism__subtitle{
+            font-size: 18px;
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 500;
+            color: var(--second-font-color);
+        }
+
+        .professionalism__description{
+            font-size: 16px;
+            font-family: "Noto Sans", sans-serif;
+            color: var(--second-font-color);
+            line-height: 1.7;
+        }
+
+        .professionalism__link-container{
+            margin-top: 15px;
+
+            .professionalism__link-vacancies{
+                padding: 18px 30px;
+                font-size: 15.4px;
+                font-family: "Heebo", sans-serif;
+                color: var(--font-color);
+                background-color: var(--accent-color);
+                font-weight: 700;
+                margin-right: 15px;
+                transition: all .2s ease-in;
+
+                &:hover{
+                    background-color: var(--background-secondary-color);
+                }
+            }
+
+            .professionalism__link-contacts{
+                padding: 18px 30px;
+                font-size: 15.4px;
+                font-family: "Heebo", sans-serif;
+                color: var(--background-secondary-color);
+                border: 2px solid var(--background-secondary-color);
+                font-weight: 700;
+                margin-right: 15px;
+                transition: all .2s ease-in;
+
+                &:hover{
+                    background-color: var(--background-secondary-color);
+                    color: var(--font-color);
+                }
+            }
+        }
+    }
+
+    .professionalism__illustration-container{
+
+        .professionalism__illustration{
+            max-height: 840px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 20% 30%;
+        }
+    }
+}
