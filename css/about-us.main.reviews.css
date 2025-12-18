@@ -51,5 +51,58 @@
                 }
             }
         }
+
+        .reviews__articles{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+
+            .reviews__container{
+                gap: 20px;
+                height: 370px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 4fr 1fr;
+                background-color: var(--background-fourth-color);
+                width: 100%;
+                padding: 40px;
+
+                .reviews__quotes-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: var(--background-third-color);
+
+                    .reviews__quotes{
+                        top: 15px;
+                        position: relative;
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: var(--accent-color);
+                    }
+                }
+
+                .reviews__name{
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+                .reviews__description{
+                    font-size: 16px;
+                    font-family: "Noto Sans", sans-serif;
+                    color: var(--second-font-color);
+                    line-height: 1.7;
+                }
+
+                .reviews__date{
+                    font-size: 14px;
+                    font-family: "Noto Sans", sans-serif;
+                    color: var(--background-secondary-color);
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
