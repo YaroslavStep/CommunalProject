@@ -104,5 +104,54 @@
                 }
             }
         }
+
+        .reviews__sponsors-container{
+            display: flex;
+            gap: 20px;
+            width: 1200px;
+            align-items: center;
+
+            .reviews__arrow-container{
+
+                &:first-of-type{
+                    transform: rotate(180deg);
+                }
+                
+                .reviews__arrow{
+                    height: 30px;
+                    fill: var(--arrow-color);
+                    cursor: pointer;
+                }
+            }
+
+            .reviews__sponsors{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                align-items: center;
+
+                .reviews__sponsor-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 125px;
+                    width: 100%;
+                    background-color: var(--background-fourth-color);
+
+                    &:first-of-type{
+
+                        .reviews__sponsor-logo{
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+
+                    .reviews__sponsor-logo{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 }
