@@ -66,6 +66,8 @@ table {
     --footer-divider-color:#525252;
     --header-primary-background:rgba(45, 45, 45, 0.85);
     --header-secondary-background:rgba(40, 40, 40, 0.86);
+    --services-header-background:rgba(40, 40, 40, 0.8);
+    --services-header-nav-background:rgba(35, 35, 35, 0.8);
     --font-third-color:#d4d4d4;
     --background-fifth-color:#bcbb63;
     font-family: "Arimo", sans-serif;
