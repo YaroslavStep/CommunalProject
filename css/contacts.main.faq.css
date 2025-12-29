@@ -1,0 +1,55 @@
+.faq{
+    background-color: var(--background-third-color);
+    height: 840px;
+    display: flex;
+
+    .faq__container-outer{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        gap: 60px;
+        height: 600px;
+        
+        .faq__form-container{
+            background-color: var(--background-fourth-color);
+            padding: 80px;
+
+            .faq__form{
+                display: flex;
+                flex-direction: column;
+                height: 468px;
+                justify-content: space-between;
+                font-family: "Noto Sans", sans-serif;
+
+                .faq__input{
+                    background-color: var(--background-third-color);
+                    height: 50px;
+                    padding: 15px 26px;
+                    color: var(--second-font-color);
+
+                }
+
+                .faq__message{
+                    height: 150px;
+                    resize: none;
+                }
+
+                .faq__submit{
+                    font-size: 14px;
+                    font-family: "Heebo", sans-serif;
+                    font-weight: 700;
+                    background-color: var(--accent-color);
+                    color: var(--font-color);
+                    height: 47px;
+                    transition: all .2s ease-in;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: var(--background-secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}

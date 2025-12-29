@@ -1,0 +1,97 @@
+.header {
+  background-image: url("../img/contacts.header.background.png");
+  height: 720px;
+  background-position: 20% 65%;
+  
+  .header__nav-container {
+    background-color: var(--services-header-nav-background);
+
+    .header__nav {
+      .nav__outer-margin {
+        height: 106px;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        color: var(--font-color);
+
+        .nav__brand {
+          width: 288px;
+          .nav__brand-link {
+            font-size: 32px;
+            font-weight: 650;
+          }
+        }
+
+        .nav__contact {
+          font-family: "Noto Sans", sans-serif;
+
+          .nav__contact-email,
+          .nav__contact-phone {
+            text-decoration: underline;
+            font-weight: 700;
+            margin: 0 10px;
+          }
+
+          .nav__contact-separator {
+            font-size: 16px;
+            margin: 0 10px;
+            color: var(--accent-color);
+          }
+        }
+
+        .nav__menu {
+          .nav__menu-link {
+            padding: 0 9.5px;
+            font-weight: 650;
+            font-family: "Noto Sans", sans-serif;
+
+            &:hover {
+              color: var(--accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header__hero{
+    background-color: var(--services-header-background);
+    height: 614px;
+
+    .header__hero-container{
+      max-width: 1200px;
+      margin: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-bottom: 100px;
+
+      .header__title{
+        color: var(--font-color);
+        font-size: 48px;
+
+        .header__slash{
+          color: var(--accent-color);
+        }
+
+        .header__dot{
+          color: var(--background-secondary-color);
+        }
+        
+      }
+
+      .header__paragraph{
+        color: var(--font-third-color);
+        font-size: 18px;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 500;
+        width: 50%;
+        margin-top: 30px;
+      }
+    }
+  }
+}
