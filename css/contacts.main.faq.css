@@ -51,5 +51,63 @@
                 }
             }
         }
+
+        .faq__information{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .faq__number{
+                font-size: 48px;
+                font-weight: 700;
+                color: var(--section-number-color);
+            }
+
+            .faq__title{
+                font-size: 48px;
+                color: var(--title-color);
+
+                .faq__slash{
+                    color: var(--background-secondary-color);
+                }
+
+                .faq__dot{
+                    color: var(--background-secondary-color);
+                }
+            }
+
+            .faq__subtitle{
+                font-size: 18px;
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 500;
+                color: var(--second-font-color);
+                line-height: 1.7;
+            }
+
+            .faq__list{
+                display: flex;
+                flex-direction: column;
+
+                .faq__item{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid var(--line-color);
+                    justify-content: space-between;
+                    padding: 20px 0;
+
+                    .faq__button-text{
+                        font-size: 25px;
+                        color: var(--hover-color);
+                        font-weight: 600;
+                    }
+
+                    .faq__button-svg{
+                        fill: var(--arrow-color);
+                    }
+                }
+            }
+
+
+        }
     }
 }
