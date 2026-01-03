@@ -1,0 +1,79 @@
+.guidance{
+    padding: 120px 0;
+
+    .guidance__outer-container{
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+
+        .guidance__container{
+            height: 100%;
+            width: 570px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .guidance__image{
+                max-height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border: 10px solid var(--background-third-color);
+            }
+
+            .guidance__number{
+                font-size: 48px;
+                color: var(--section-number-color);
+                font-weight: 700;
+            }
+
+            .guidance__title{
+                font-size: 48px;
+                color: var(--hover-color);
+                font-weight: 700;
+
+                .guidance__slash{
+                    color: var(--accent-color);
+                }
+
+                .guidance__dot{
+                    color: var(--background-secondary-color);
+                }
+            }
+
+            .guidance__subtitle{
+                font-family: "Noto Sans", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--second-font-color);
+            }
+
+            .guidance__description{
+                font-family: "Noto Sans", sans-serif;
+                font-size: 16px;
+                color: var(--second-font-color);
+                line-height: 1.7;
+            }
+
+            .guidance__inner-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px 24px;
+
+                .guidance__service-container{
+                    display: flex;
+                    align-items: center;
+
+                    .guidance__svg{
+                        width: 20px;
+                        height: auto;
+                        padding-right: 10px;
+                        box-sizing: content-box;
+                        fill: var(--background-secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}
