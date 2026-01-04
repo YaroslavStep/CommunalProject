@@ -45,6 +45,7 @@ table {
 }
 
 :root {
+    --hover-secondary-color: #b9b0dc;
     --hover-color:#272727;
     --font-color:white;
     --accent-color:#b5b454;
@@ -71,5 +72,5 @@ table {
     --font-third-color:#d4d4d4;
     --background-fifth-color:#bcbb63;
     font-family: "Arimo", sans-serif;
-
+    scroll-behavior: smooth;
 }

@@ -10,12 +10,24 @@
     justify-content: space-between;
     font-size: 14px;
     color: var(--font-color);
+    padding: 0 20px;
 
     .nav__brand {
-        width: 288px;
+
       .nav__brand-link {
         font-size: 32px;
         font-weight: 650;
+
+        @media(max-width: 768px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .nav__contact,
+    .nav__menu {
+      @media(max-width: 1024px) {
+        display: none;
       }
     }
 
@@ -43,9 +55,32 @@
         font-weight: 650;
         font-family: "Noto Sans", sans-serif;
 
-        &:hover{
-           color: var(--accent-color);
+        &:hover {
+          color: var(--accent-color);
         }
+      }
+    }
+
+    .nav__burger-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+
+      &:hover .nav__menu-line{
+        background-color: var(--hover-secondary-color);
+      }
+
+      @media(min-width: 1025px){
+        display: none;
+      }
+
+      .nav__menu-line{
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: var(--background-fourth-color);
+        transition: all .2s ease-in;
       }
     }
   }

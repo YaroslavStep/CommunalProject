@@ -76,6 +76,7 @@
                     color: var(--title-color);
                     font-family: "Noto Sans", sans-serif;
                     font-weight: 700;
+                    cursor: pointer;
 
                     .our-news-articles__arrow{
                         color: var(--accent-color);
@@ -124,6 +125,7 @@
                         color: var(--title-color);
                         font-family: "Noto Sans", sans-serif;
                         font-weight: 700;
+                        cursor: pointer;
 
                         .our-news-articles__arrow{
                             color: var(--accent-color);
