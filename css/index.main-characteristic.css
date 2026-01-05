@@ -1,5 +1,5 @@
 .services{
-    padding-top: 100px;
+    padding: 100px 20px 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,15 +7,33 @@
 
     .services__number{
         font-weight: 650;
-        font-size: 48px;
+        font-size: 34px;
         color: var(--section-number-color);
+
+        @media(min-width: 768px){
+            font-size: 41px;
+        }
+
+        @media(min-width: 992px){
+            font-size: 48px;
+        }
     }
 
     .services__title{
         margin-top: 10px;
         margin-bottom: 20px;
-        font-size: 48px;
-        color:var(--hover-color);
+        font-size: 34px;
+        text-align: center;
+        color: var(--hover-color);
+        line-height: 1.2;
+
+        @media(min-width: 768px){
+            font-size: 41px;
+        }
+
+        @media(min-width: 992px){
+            font-size: 48px;
+        }
 
         .services__slash{
             color: var(--accent-color);
@@ -28,13 +46,21 @@
         color: var(--second-font-color);
         margin-bottom: 50px;
         font-weight: 600;
+        text-align: center;
     }
 
     .services__list{
         max-width: 1200px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0 30px;
+        gap: 30px;
+
+        @media(min-width: 768px){
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        @media(min-width: 992px){
+            grid-template-columns: repeat(3, 1fr)
+        }
 
         .services__item{
             padding: 40px;
@@ -49,8 +75,16 @@
 
         .services__item-title{
             color:var(--title-color);
-            font-size: 25px;
+            font-size: 22px;
             font-weight: 600;
+
+            @media(min-width: 768px){
+                font-size: 23px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 25px;
+            }
         }
 
         .services__item-description{
@@ -75,6 +109,7 @@
         font-family: "Noto Sans", sans-serif;
         font-size: 16px;
         color: var(--second-font-color);
+        text-align: center;
 
         .services__cta-highlight{
             color: var(--accent-color);
@@ -83,7 +118,6 @@
     }
 
     .services__more-link{
-        margin-bottom: 100px;
         font-weight: 700;
         padding: 15px 30px;
         font-family: "Heebo", sans-serif;
