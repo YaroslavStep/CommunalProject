@@ -3,26 +3,33 @@
     
     .header-hero__outer-margin{
         color: var(--font-color);
-        align-items: center;
-        display: flex;
+        display: grid;
         max-width: 1200px;
         margin: auto;
-        padding-top: 80px;
+        padding: 80px 20px 40px;
+
+        @media(min-width: 768px){
+            grid-template-columns: 1fr 2fr;
+        }
 
         .header-hero__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             .header-hero__actions{
                 margin-top: 40px;
                 display: flex;
+                flex-wrap: wrap;
 
                 .header-hero__button{
                     font-family: "Heebo", sans-serif;
                     font-weight: 700;
+                    padding: 15px 30px;
 
                 }
 
                 .header-hero__button--primary{
-                    padding: 15px 30px;
                     background-color: var(--accent-color);
                     transition: .2s ease-in;
 
@@ -37,11 +44,15 @@
                     display: flex;
                     align-items: center;
                     justify-content: start;
-                    padding-left: 20px;
-
+                    position: relative;
+                    right: 30px;
 
                     &:hover{
                         text-decoration: underline;
+                    }
+
+                    @media(min-width: 410px){
+                        right: 0;
                     }
 
                     .hero__button-text{
@@ -64,11 +75,26 @@
 
                 .header-hero__title{
                     line-height: 1.1;
-                    font-size: 25px;
+                    font-size: 22px;
+
+                    @media(min-width: 768px){
+                        font-size: 23px;
+                    }
+
+                    @media(min-width: 992px){
+                        font-size: 25px;
+                    }
 
                     .header-hero__highlight{
+                        font-size: 44px;
                         
-                        font-size: 76px;
+                        @media(min-width: 992px){
+                            font-size: 65px;
+                        }
+
+                        @media(min-width: 992px){
+                            font-size: 76px;
+                        }
 
                         .header-hero__dot{
                             color: var(--accent-color);
@@ -80,7 +106,18 @@
         }
 
         .header-hero__image-wrapper{
-            padding: 0 15px;
+            display: flex;
+            margin-top: 50px;
+
+            @media(min-width: 768px){
+                padding: 0 15px;
+                margin-top: 0;
+            }
+
+            .header-hero__image{
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 
