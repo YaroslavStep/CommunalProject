@@ -3,37 +3,66 @@
     max-width: 1200px;
     display: grid;
     gap: 100px;
+    padding: 0 20px;
 
     .about-us__content{
-        grid-template-columns: 1fr 1fr;
         display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+
+        @media(min-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
 
         .about-us__image-wrapper{
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            @media(min-width: 768px){
+                min-width: 100%;
+            }
 
             .about-us__image{
-                max-width: 545px;
-                object-position: left;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
-                height: 545px;
+                object-position: left;
                 border: 10px solid var(--background-third-color);
             }
         }
 
         .about-us__text-block{
             display: grid;
-            gap: 10px;
+            gap: 20px;
 
             .about-us__number{
                 font-weight: 650;
-                font-size: 48px;
+                font-size: 34px;
                 color: var(--section-number-color);
                 line-height: 1.1;
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
             }
 
             .about-us__title{
                 line-height: 1.1;
-                font-size: 48px;
+                font-size: 34px;
                 color:var(--hover-color);
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
 
 
                 .about-us__title-decor{
@@ -60,9 +89,15 @@
             }
 
             .about-us__stats{
-                justify-content: center;
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);      
+                
+                @media(min-width: 768px){
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media(min-width: 1080px){
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
             
                 .about-us__stat{
                     width: 150px;
@@ -74,7 +109,15 @@
                     .about-us__stat-number{
                         position: relative;
                         color: var(--accent-color);
-                        font-size: 48px;
+                        font-size: 34px;
+
+                        @media(min-width: 768px){
+                            font-size: 41px;
+                        }
+
+                        @media(min-width: 992px){
+                            font-size: 48px;
+                        }
 
                         &::before{
                             color: var(--first-background-color);
@@ -97,13 +140,29 @@
     .about-us__cta{
         display: grid;
         gap: 40px;
-        padding: 60px;
+        padding: 40px;
         background: url(https://res2.weblium.site/res/68999fa97b47e3d7b22277e8/68a566c1da655732fb8eafb3_optimized_1646.webp) 55% 36.55% / cover no-repeat;
         
+        @media(min-width: 768px){
+            padding: 50px;
+        }
+
+        @media(min-width: 992px){
+            padding: 60px;
+        }
+
         .about-us__cta-title{
             line-height: 1.1;
-            font-size: 48px;
+            font-size: 34px;
             color:var(--font-color);
+
+            @media(min-width: 768px){
+                font-size: 41px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 48px;
+            }
 
             .about-us__title-decor{
                 color: var(--accent-color);
@@ -124,6 +183,7 @@
         .about-us__cta-features{
             font-family: "Noto Sans", sans-serif;
             font-size: 14px;
+            line-height: 1.7;
             color: var(--background-third-color);
 
             .about-us__dot{
@@ -132,7 +192,6 @@
         }
 
         .about-us__cta-button{
-            margin-bottom: 20px;
             width: fit-content;
             font-weight: 700;
             padding: 15px 30px;
