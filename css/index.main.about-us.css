@@ -138,6 +138,7 @@
     }
 
     .about-us__cta{
+        margin-bottom: 60px;
         display: grid;
         gap: 40px;
         padding: 40px;

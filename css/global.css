@@ -71,6 +71,7 @@ table {
     --services-header-nav-background:rgba(35, 35, 35, 0.8);
     --font-third-color:#d4d4d4;
     --background-fifth-color:#bcbb63;
+    --secondary-arrow-color: #c9c9c9;
     font-family: "Arimo", sans-serif;
     scroll-behavior: smooth;
 }
