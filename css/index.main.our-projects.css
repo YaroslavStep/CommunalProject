@@ -69,7 +69,8 @@
     .our-projects__carousel{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
         position: relative;
 
         .our-projects__icon{
@@ -85,16 +86,9 @@
             border-radius: 100%;
             cursor: pointer;
 
-            @media(min-width: 1200px){
-                padding: 0;
-                background: none;
-                fill: var(--arrow-color);
-                opacity: 1;
-            }
-
             &:first-of-type{
                 left: -20px;
-                transform: rotate(180deg) scale(0.6);;
+                transform: rotate(180deg) scale(0.6);
 
                 @media(min-width: 768px){
                     transform: scale(0.7) rotate(180deg);
@@ -102,10 +96,6 @@
 
                 @media(min-width: 992px){
                     transform: rotate(180deg);
-                }
-
-                @media(min-width: 1200px){
-                    left: -30px;
                 }
             }
 
@@ -119,10 +109,6 @@
 
                 @media(min-width: 992px){
                     transform: scale(1);
-                }
-
-                @media(min-width: 1200px){
-                    right: -30px;
                 }
             }
         }
