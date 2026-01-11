@@ -57,48 +57,99 @@
     }
 
     .goal__gallery{
-        display: flex;
-        flex-direction: row;
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+            
+    }
+
+    .goal__gallery-3by2{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+
+        @media(min-width: 992px){
+            display: grid;
+        }
 
         .goal__gallery-row{
             display: grid;
+            width: 100%;
             gap: 30px;
-        
 
             .goal__gallery-item{
+                width: 100%;
 
                 .goal__image{
+                    width: 100%;
                     object-fit: cover;
-                    width: 380px;
-
                 }
 
-                .goal__image--1{
-                    height: 257px;
+                .goal__image--1, .goal__image--6{
+                    aspect-ratio: 7 / 5;
+                }
+
+                .goal__image--2, .goal__image--5{
+                    aspect-ratio: 7 / 8;
                 }
 
                 .goal__image--2{
-                    height: 420px;
+                    object-position: 90% 90%;
                 }
 
                 .goal__image--3{
-                    height: 358px;
+                    aspect-ratio: 1 / 1;
+                    object-position: 15% 50%;
                 }
 
                 .goal__image--4{
-                    height: 317px;
+                    aspect-ratio: 7 / 6;
+                }
+            }
+        }
+    }
+
+    .goal__gallery-2by3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        @media(min-width: 480px){
+            gap: 30px;
+        }
+
+        @media(min-width: 992px){
+            display: none;
+        }
+
+        .goal__gallery-row{
+            display: grid;
+            width: 100%;
+            gap: 15px;
+
+            @media(min-width: 480px){
+                gap: 30px;
+            }
+
+            .goal__gallery-item{
+                width: 100%;
+
+                .goal__image{
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .goal__image--1, .goal__image--6{
+                    aspect-ratio: 3 / 2;
+                }
+
+                .goal__image--2, .goal__image--5{
+                    aspect-ratio: 4 / 5;
                 }
 
                 .goal__image--5{
-                    height: 440px;
+                    object-position: 90% 90%;
                 }
 
-                .goal__image--6{
-                    height: 235px;
+                .goal__image--3, .goal__image--4{
+                    aspect-ratio: 1 / 1;
                 }
             }
         }
