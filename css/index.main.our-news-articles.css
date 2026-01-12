@@ -179,7 +179,9 @@
         }
 
         .our-news-articles__side-image-wrapper{
-            max-width: 37%;
+            @media(min-width: 768px){
+                max-width: 37%;
+            }
 
             .our-news-articles__side-image{
                 border: 10px solid white;
