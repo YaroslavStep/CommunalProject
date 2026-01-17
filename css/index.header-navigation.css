@@ -13,7 +13,8 @@
     padding: 0 20px;
 
     .nav__brand {
-
+      width: 288px;
+      
       .nav__brand-link {
         font-size: 32px;
         font-weight: 650;
