@@ -3,11 +3,22 @@
     margin: auto;
     display: grid;
     gap: 50px;
-    padding-bottom: 115px;
+    padding: 60px 20px 90px;
+
+    @media(min-width: 768px){
+        padding: 60px 30px 102.5px;
+    }
+
+    @media(min-width: 992px){
+        padding: 60px 40px 115px;
+    }
 
     .services__header{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+
+        @media(min-width: 768px){
+            grid-template-columns: 2fr 1fr;
+        }
 
         .services__header-container{
             display: flex;
@@ -15,8 +26,16 @@
             gap: 20px;
 
             .services__title{
-                font-size: 48px;
+                font-size: 34px;
                 color: var(--title-color);
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
                 
                 .services__slash{
                     color: var(--accent-color);
@@ -32,14 +51,23 @@
                 font-size: 18px;
                 font-family: "Noto Sans", sans-serif;
                 font-weight: 500;
+                padding-bottom: 40px;
             }
 
             .services__number{
-                text-align: right;
-                font-size: 48px;
+                font-size: 34px;
                 font-weight: 700;
                 color: var(--section-number-color);
                 line-height: 1.6;
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                    text-align: right;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
             }
 
             .services__wish{
@@ -49,36 +77,87 @@
                 color: var(--title-color);
                 letter-spacing: 1px;
                 font-weight: 700;
+
+                @media(min-width: 768px){
+                    text-align: right;
+                }
             }
         }
     }
 
     .services__outer-container{
         display: flex;
-        gap: 55px;
         align-items: center;
-
+        justify-content: center;
+        gap: 20px;
+        position: relative;
 
         .services__arrow-container{
+            position: absolute;
+
+            &:first-of-type{
+                left: -20px;
+                transform: rotate(180deg) scale(0.45);
+
+                @media(min-width: 768px){
+                    transform: scale(0.65) rotate(180deg);
+                }
+            }
+
+            &:last-of-type{
+                right: -20px;
+                transform: scale(0.45);
+
+                @media(min-width: 768px){
+                    transform: scale(0.65);
+                }
+            }
 
             .services__arrow{
                 height: 30px;
                 width: 30px;
-            }
-
-            .services__arrow-left{
-                transform: rotate(180deg);
+                background-color: var(--hover-color);
+                fill: var(--secondary-arrow-color);
+                padding: 10px;
+                opacity: 0.8;
+                box-sizing: content-box;
+                border-radius: 100%;
+                cursor: pointer;
             }
         }
 
         .services__content-container{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 100px;
+            grid-template-columns: 1fr;
+
+            @media(min-width: 768px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media(min-width: 992px){
+                grid-template-columns: repeat(3, 1fr);
+            }
 
             .services__inner-container{
                 display: grid;
                 gap: 20px;
+                padding: 10px 40px;
+
+                &:nth-child(3){
+                    display: none;
+
+                    @media(min-width: 992px){
+                        display: grid;
+                    }
+                }
+
+                &:nth-child(2){
+                    display: none;
+
+                    @media(min-width: 768px){
+                        display: grid;
+                    }
+                }
 
                 .services__image-container{
                     

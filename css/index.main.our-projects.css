@@ -74,7 +74,6 @@
         position: relative;
 
         .our-projects__icon{
-            cursor: pointer;
             width: 30px;
             height: 30px;
             position: absolute;
