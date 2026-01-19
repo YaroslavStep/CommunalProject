@@ -1,21 +1,56 @@
 .team{
     max-width: 1200px;
     margin: auto;
-    padding-bottom: 120px;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media(min-width: 768px){
+        padding: 102.5px 30px 105px;
+    }
+
+    @media(min-width: 992px){
+        padding: 115px 40px 120px;
+    }
+
+    @media(min-width: 1280px){
+        padding: 115px 15px 120px;
+    }
 
     .team__header{
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
 
         .team__number{
-            font-size: 48px;
+            font-size: 34px;
             font-weight: 700;
             color: var(--number-color);
+
+            @media(min-width: 768px){
+                font-size: 41px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 48px;
+            }
         }
 
         .team__title{
-            font-size: 48px;
+            font-size: 34px;
+            color: var(--hover-color);
+            text-align: center;
+            line-height: 1.2;
+            
+            @media(min-width: 768px){
+                font-size: 41px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 48px;
+            }
 
             .team__slash{
                 color: var(--accent-color);
@@ -31,31 +66,47 @@
             font-size: 18px;
             color: var(--second-font-color);
             font-weight: 500;
-            margin-top: 20px;
-            margin-bottom: 60px;
+            text-align: center;
         }
     }
 
     .team__content{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 70px;
+
+        @media(min-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
 
         .team__container{
             display: flex;
             gap: 20px;
-            align-items: center;
+            align-items: flex-start;
 
             .team__photo{
                 border-radius: 100%;
-                max-width: 170px;
+                width: 120px;
+
+                @media(min-width: 768px){
+                    width: 170px;
+                }
             }
 
             .team__text-container{
                
                 .team__person{
-                    font-size: 25px;
+                    font-size: 22px;
                     font-weight: 600;
+
+                    @media(min-width: 768px){
+                        font-size: 23px;
+                    }
+
+                    @media(min-width: 992px){
+                        font-size: 25px;
+                    }
                 }
 
                 .team__position{
