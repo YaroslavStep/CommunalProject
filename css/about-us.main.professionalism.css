@@ -1,25 +1,54 @@
 .professionalism{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     background-color: var(--background-third-color);
-    height: 840px;
+
+    @media(min-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .professionalism__content{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 120px 180px 115px;
+        padding: 90px 30px;
+        max-width: 600px;
+        margin: auto;
+
+        @media(min-width: 768px){
+            padding: 102.5px 30px 105px;
+        }
+
+        @media(min-width: 992px){
+            padding: 115px 30px 120px;
+        }
         
         .professionalism__number{
-            font-size: 48px;
+            font-size: 34px;
             color: var(--section-number-color);
             font-weight: 700;
+            line-height: 1;
+
+            @media(min-width: 768px){
+                font-size: 41px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 48px;
+            }
         }
 
         .professionalism__title{
             color: var(--title-color);
-            font-size: 48px;
-            line-height: 1.2;
+            font-size: 34px;
+
+            @media(min-width: 768px){
+                font-size: 41px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 48px;
+            }
 
             .professionalism__slash{
                 color: var(--accent-color);
@@ -45,7 +74,10 @@
         }
 
         .professionalism__link-container{
-            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
 
             .professionalism__link-vacancies{
                 padding: 18px 30px;
@@ -54,7 +86,6 @@
                 color: var(--font-color);
                 background-color: var(--accent-color);
                 font-weight: 700;
-                margin-right: 15px;
                 transition: all .2s ease-in;
 
                 &:hover{
@@ -69,7 +100,6 @@
                 color: var(--background-secondary-color);
                 border: 2px solid var(--background-secondary-color);
                 font-weight: 700;
-                margin-right: 15px;
                 transition: all .2s ease-in;
 
                 &:hover{
@@ -81,12 +111,19 @@
     }
 
     .professionalism__illustration-container{
+        width: 100%;
 
         .professionalism__illustration{
-            max-height: 840px;
             width: 100%;
             object-fit: cover;
-            object-position: 20% 30%;
+            object-position: 20% 28%;
+            aspect-ratio: 5 / 3;
+
+            @media(min-width: 768px){
+                aspect-ratio: none;
+                height: 100%;
+                object-position: 70% 50%;
+            }
         }
     }
 }
