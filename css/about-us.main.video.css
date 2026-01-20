@@ -1,8 +1,18 @@
 .video {
   background-color: var(--hover-color);
+  height: 300px;
+  width: 100%;
+
+  @media(min-width: 768px){
+    height: 550px;
+  }
+
+  @media(min-width: 992px){
+    height: 800px;
+  }
 
   .video__container {
-    height: 800px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
