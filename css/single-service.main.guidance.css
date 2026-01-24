@@ -1,37 +1,66 @@
 .guidance{
-    padding: 120px 0;
 
     .guidance__outer-container{
-        height: 600px;
-        display: flex;
-        justify-content: space-around;
+        padding: 90px 20px;
+        display: grid;
         max-width: 1200px;
+        gap: 50px;
         margin: auto;
 
+        @media(min-width: 768px){
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 105px 30px;
+        }
+
+        @media(min-width: 992px){
+            padding: 120px 40px;
+        }
+
+        @media(min-width: 1280px){
+            padding: 120px 15px;
+        }
+
         .guidance__container{
-            height: 100%;
-            width: 570px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: 20px;
 
             .guidance__image{
-                max-height: 100%;
+                aspect-ratio: 1 / 1;
                 width: 100%;
                 object-fit: cover;
                 border: 10px solid var(--background-third-color);
             }
 
             .guidance__number{
-                font-size: 48px;
+                font-size: 34px;
                 color: var(--section-number-color);
                 font-weight: 700;
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
             }
 
             .guidance__title{
-                font-size: 48px;
+                font-size: 34px;
                 color: var(--hover-color);
                 font-weight: 700;
+                line-height: 1.2;
+
+                @media(min-width: 768px){
+                    font-size: 41px;
+                }
+
+                @media(min-width: 992px){
+                    font-size: 48px;
+                }
 
                 .guidance__slash{
                     color: var(--accent-color);
